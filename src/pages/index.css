@@ -1,0 +1,68 @@
+
+.card {
+    /*background-color: red;*/
+    /*color: black;*/
+    /*height: 10px;*/
+    /*padding: 4rem;*/
+
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.cards {
+    /*max-width: 1200px;*/
+    /*margin: 0 auto;*/
+    /*display: inline-grid;*/
+    /*grid-gap: 50px 100px;*/
+    /*grid-template-columns: auto auto auto;*/
+
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.heading {
+    text-align: center;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.headingStony {
+    background-color: red;
+    color: black;
+}
+
+.headingEndStony {
+    background-color: black;
+    color: white;
+}
