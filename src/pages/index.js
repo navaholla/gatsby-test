@@ -18,6 +18,7 @@ import gso from '../images/gso.png'
 import sbuEngaged from '../images/sbuEngaged.png'
 import vis from '../images/vis.png'
 import corq from '../images/corq.png'
+import tbd from '../images/tbd.jpeg'
 
 
 
@@ -74,47 +75,52 @@ const IndexPage = () => {
 
       <div className="cards">
           <a href="https://blackboard.stonybrook.edu/webapps/login/">
-            <div className="card tooltip" data-tip={black_board_tool_tip} data-for="blackboardToolTip" style={{height: "208px", width: "300px"}}>
-              {/*Blackboard*/}
-                <img src={blackboard} height="200px" width="300px"  />
-                    {/*<span className="tooltiptext">Tooltip blackboard</span>*/}
-            </div>
+              <MaterialTooltip title={<Typography fontSize={20} align="center">Blackboard!</Typography>}>
+                  <div className="card tooltip" style={{height: "208px" , width: "300px"}}>
+                      <img src={blackboard} height="200px" width="300px"  />
+                  </div>
+              </MaterialTooltip>
           </a>
 
         <a href="https://piazza.com/class/jcjw2j3uzf762z">
-            <div className="card tooltip" data-tip={piazza_tip} data-for="piazzaToolTip" style={{height: "208px" , width: "300px"}}>
-                <img src={piazza} height="90px" width="200px"  />
-                {/*<span className="tooltiptext">Tooltip piazza</span>*/}
-            </div>
+            <MaterialTooltip title={<Typography fontSize={20} align="center">Piazza!</Typography>}>
+                <div className="card tooltip" style={{height: "208px" , width: "300px"}}>
+                    <img src={piazza} height="90px" width="200px"  />
+                </div>
+            </MaterialTooltip>
         </a>
 
-            <a href="https://psns.cc.stonybrook.edu/psp/csprods/EMPLOYEE/CAMP/?cmd=login&languageCd=ENG&">
-                <div className="card tooltip" data-tip data-for="solarToolTip"  style={{height: "208px" , width: "300px"}}>
+        <a href="https://psns.cc.stonybrook.edu/psp/csprods/EMPLOYEE/CAMP/?cmd=login&languageCd=ENG&">
+            <MaterialTooltip title={<Typography fontSize={20} align="center">Solar!</Typography>}>
+                <div className="card tooltip" style={{height: "208px" , width: "300px"}}>
                     <img src={solar} height="50px" width="200px"  />
-                        {/*<span className="tooltiptext">Tooltip solar</span>*/}
                 </div>
-            </a>
+            </MaterialTooltip>
+        </a>
 
           <a href="https://vis.stonybrook.edu/istart/controllers/start/StartEngine.cfm">
-              <div className="card tooltip" style={{height: "208px" , width: "300px"}}>
-                  <img src={vis} height="100px" width="200px"  />
-                  <span className="tooltiptext">Tooltip VIS</span>
-              </div>
+              <MaterialTooltip title={<Typography fontSize={20} align="center">VIS!</Typography>}>
+                  <div className="card tooltip" style={{height: "208px" , width: "300px"}}>
+                      <img src={vis} height="100px" width="200px"  />
+                  </div>
+              </MaterialTooltip>
           </a>
 
 
         <a href="https://library.stonybrook.edu/BOOKED/Web/schedule.php#">
-            <div className="card tooltip" style={{height: "208px" , width: "300px"}}>
-                <img src={library} height="100px" width="200px"  />
-                {/*<span className="tooltiptext">Tooltip Library Booking</span>*/}
-            </div>
+            <MaterialTooltip title={<Typography fontSize={20} align="center">Library!</Typography>}>
+                <div className="card tooltip" style={{height: "208px" , width: "300px"}}>
+                    <img src={library} height="100px" width="200px"  />
+                </div>
+            </MaterialTooltip>
         </a>
 
         <a href="https://print.stonybrook.edu/MyPrintCenter/">
-            <div className="card tooltip" data-tip={pharos_tip} data-for="pharosToolTip" style={{height: "208px" , width: "300px"}}>
-                <img src={pharos} height="90px" width="200px"  />
-                {/*<span className="tooltiptext">Tooltip Pharos</span>*/}
-            </div>
+            <MaterialTooltip title={<Typography fontSize={20} align="center">Pharos!</Typography>}>
+                <div className="card tooltip" style={{height: "208px" , width: "300px"}}>
+                    <img src={pharos} height="90px" width="200px"  />
+                </div>
+            </MaterialTooltip>
         </a>
       </div>
 
@@ -126,22 +132,30 @@ const IndexPage = () => {
         <div className="cards">
 
             <a href="https://stonybrook.medicatconnect.com/home.aspx">
-                <div className="card tooltip" data-tip={health_portal_tip} data-for="healthToolTip" style={{height: "208px" , width: "300px"}}>
-                    {/*Blackboard*/}
-                    <img src={healthportal} height="150px" width="250px"  />
-                    {/*<span className="tooltiptext">Tooltip health portal</span>*/}
-                </div>
+                <MaterialTooltip title={<Typography fontSize={20} align="center">Health Portal!</Typography>}>
+                    <div className="card tooltip" style={{height: "208px" , width: "300px"}}>
+                        <img src={healthportal} height="150px" width="250px"  />
+                    </div>
+                </MaterialTooltip>
             </a>
-
 
             <a href="https://www.stonybrook.edu/commcms/studentaffairs/shs/services/COVID_Testing/COVID_Testing_Residents_Vaccinated-1.php">
-                <div className="card tooltip" data-tip={covid_tip} data-for="covidToolTip" style={{height: "208px" , width: "300px"}}>
-                    <img src={covidtest} height="90px" width="200px"  />
-                    {/*<span className="tooltiptext">Tooltip Covid testing</span>*/}
-                </div>
+                <MaterialTooltip title={<Typography fontSize={20} align="center">COVID Testing!</Typography>}>
+                    <div className="card tooltip" style={{height: "208px" , width: "300px"}}>
+                        <img src={covidtest} height="90px" width="200px"  />
+                    </div>
+                </MaterialTooltip>
             </a>
-        </div>
 
+            <a href="">
+                <MaterialTooltip title={<Typography fontSize={20} align="center">TBD!</Typography>}>
+                    <div className="card tooltip" style={{height: "208px" , width: "300px"}}>
+                        <img src={tbd} height="100px" width="200px"  />
+                    </div>
+                </MaterialTooltip>
+            </a>
+
+        </div>
 
       <div>
           <h1>Travel</h1>
@@ -149,13 +163,29 @@ const IndexPage = () => {
 
         <div className="cards">
             <a href="https://stonybrookuniversity.doublemap.com/map/">
-                <div className="card tooltip" style={{height: "208px" , width: "300px"}}>
-                    <img src={doublemaps} height="150px" width="150px"  />
-                    <span className="tooltiptext">Tooltip Doublemap</span>
-                </div>
+                <MaterialTooltip title={<Typography fontSize={20} align="center">Double Maps!</Typography>}>
+                    <div className="card tooltip" style={{height: "208px" , width: "300px"}}>
+                        <img src={doublemaps} height="150px" width="150px"  />
+                    </div>
+                </MaterialTooltip>
+            </a>
+
+            <a href="">
+                <MaterialTooltip title={<Typography fontSize={20} align="center">TBD!</Typography>}>
+                    <div className="card tooltip" style={{height: "208px" , width: "300px"}}>
+                        <img src={tbd} height="100px" width="200px"  />
+                    </div>
+                </MaterialTooltip>
+            </a>
+
+            <a href="">
+                <MaterialTooltip title={<Typography fontSize={20} align="center">TBD!</Typography>}>
+                    <div className="card tooltip" style={{height: "208px" , width: "300px"}}>
+                        <img src={tbd} height="100px" width="200px"  />
+                    </div>
+                </MaterialTooltip>
             </a>
         </div>
-
 
       <div>
           <h1>Social</h1>
@@ -164,41 +194,52 @@ const IndexPage = () => {
         <div className="cards">
 
             <a href="https://www.linkedin.com/feed/">
-                <div className="card tooltip" style={{height: "208px" , width: "300px"}}>
-                    <img src={linkedIn} height="150px" width="150px"  />
-                    {/*<span className="tooltiptext">Tooltip LinkedIn</span>*/}
-                </div>
+                <MaterialTooltip title={<Typography fontSize={20} align="center">LinkedIn!</Typography>}>
+                    <div className="card tooltip" style={{height: "208px" , width: "300px"}}>
+                        <img src={linkedIn} height="150px" width="150px"  />
+                    </div>
+                </MaterialTooltip>
             </a>
 
 
             <a href="https://stonybrook.joinhandshake.com/">
-                <div className="card tooltip" style={{height: "208px" , width: "300px"}}>
-                    <img src={handshake} height="150px" width="150px"  />
-                    <span className="tooltiptext">Tooltip Handshake</span>
-                </div>
+                <MaterialTooltip title={<Typography fontSize={20} align="center">Handshake!</Typography>}>
+                    <div className="card tooltip" style={{height: "208px" , width: "300px"}}>
+                        <img src={handshake} height="150px" width="150px"  />
+                    </div>
+                </MaterialTooltip>
             </a>
 
             <a href="https://www.stonybrookgso.org/">
-                <div className="card tooltip" style={{height: "208px" , width: "300px"}}>
-                    <img src={gso} height="180px" width="200px"  />
-                    <span className="tooltiptext">Tooltip GSO</span>
-                </div>
+                <MaterialTooltip title={<Typography fontSize={20} align="center">GSO!</Typography>}>
+                    <div className="card tooltip" style={{height: "208px" , width: "300px"}}>
+                        <img src={gso} height="180px" width="200px"  />
+                    </div>
+                </MaterialTooltip>
             </a>
 
 
             <a href="https://stonybrook.campuslabs.com/engage/">
-                <div className="card tooltip" style={{height: "208px" , width: "300px"}}>
-                    <img src={sbuEngaged} height="100px" width="200px"  />
-                    <span className="tooltiptext">Tooltip SBU Engaged</span>
-                </div>
+                <MaterialTooltip title={<Typography fontSize={20} align="center">SBU Engaged!</Typography>}>
+                    <div className="card tooltip" style={{height: "208px" , width: "300px"}}>
+                        <img src={sbuEngaged} height="100px" width="200px"  />
+                    </div>
+                </MaterialTooltip>
             </a>
 
 
             <a href = "https://www.stonybrook.edu/commcms/studentaffairs/sac/Sb_Engaged_and_Corq/">
                 <MaterialTooltip title={<Typography fontSize={20} align="center">Corq!</Typography>}>
                     <div className="card tooltip" style={{height: "208px" , width: "300px"}}>
-
                         <img src={corq} height="100px" width="100px"  />
+                    </div>
+                </MaterialTooltip>
+            </a>
+
+            <a href="">
+                <MaterialTooltip title={<Typography fontSize={20} align="center">TBD!</Typography>}>
+                    <div className="card tooltip" style={{height: "208px" , width: "300px"}}>
+                        <img src={tbd} height="100px" width="200px"  />
                     </div>
                 </MaterialTooltip>
             </a>
@@ -212,28 +253,34 @@ const IndexPage = () => {
 
         <div className="cards">
 
-
             <a href="https://www.panerabread.com/en-us/home.html?openOverlay=order-setup-flow&utm_medium=yext&utm_source=local&utm_campaign=yext&utm_content=local-search&overlay=order-setup-flow">
-                <div className="card tooltip" style={{height: "208px" , width: "300px"}}>
-                    <img src={panera} height="150px" width="200px"  />
-                    <span className="tooltiptext">Tooltip Panera</span>
-                </div>
+                <MaterialTooltip title={<Typography fontSize={20} align="center">Panera Bread!</Typography>}>
+                    <div className="card tooltip" style={{height: "208px" , width: "300px"}}>
+                        <img src={panera} height="150px" width="200px"  />
+                    </div>
+                </MaterialTooltip>
             </a>
 
             <a href="https://instacart.com">
-                <MaterialTooltip title={<Typography fontSize={20} align="center">This is the message which needs to be displayed !</Typography>}>
+                <MaterialTooltip title={<Typography fontSize={20} align="center">Instacart!</Typography>}>
                 <div className="card tooltip" style={{height: "208px" , width: "300px"}}>
-
                     <img src={instacart} height="100px" width="200px"  />
-                    {/*<span className="tooltiptext">Tooltip Instacart</span>*/}
                 </div>
                 </MaterialTooltip>
             </a>
 
+            <a href="">
+                <MaterialTooltip title={<Typography fontSize={20} align="center">TBD!</Typography>}>
+                    <div className="card tooltip" style={{height: "208px" , width: "300px"}}>
+                        <img src={tbd} height="100px" width="200px"  />
+                    </div>
+                </MaterialTooltip>
+            </a>
 
-            <MaterialTooltip title={<Typography fontSize={20}>This is the message which needs to be displayed !</Typography>}>
-                <Container>Material UI default</Container>
-            </MaterialTooltip>
+
+            {/*<MaterialTooltip title={<Typography fontSize={20}>This is the message which needs to be displayed !</Typography>}>*/}
+            {/*    <Container>Material UI default</Container>*/}
+            {/*</MaterialTooltip>*/}
 
         </div>
 
