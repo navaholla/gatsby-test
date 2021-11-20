@@ -17,9 +17,21 @@ import stonybrook from '../images/stonybrook.png'
 import gso from '../images/gso.png'
 import sbuEngaged from '../images/sbuEngaged.png'
 import vis from '../images/vis.png'
+import corq from '../images/corq.png'
+
 
 
 import ReactTooltip from "react-tooltip";
+
+import Tooltip from "@material-ui/core/Tooltip";
+import Button from "@material-ui/core/Button";
+import MaterialTooltip from "@material-ui/core/Tooltip";
+import styled from "styled-components";
+import { Typography } from '@mui/material';
+
+
+
+
 
 // Step 2: Define your component
 const IndexPage = () => {
@@ -35,6 +47,15 @@ const IndexPage = () => {
     const pharos_tip = "Pharos tip"
     const covid_tip = "COVID tip"
     const handshake_tip = "Handshake tip"
+
+
+  const Container = styled.div`
+    background-color: lightblue;
+    width: 300px;
+    margin: 40px auto;
+    padding: 10px;
+    text-align: center;
+`;
 
   return (
       <main>
@@ -172,6 +193,16 @@ const IndexPage = () => {
                 </div>
             </a>
 
+
+            <a href = "https://www.stonybrook.edu/commcms/studentaffairs/sac/Sb_Engaged_and_Corq/">
+                <MaterialTooltip title={<Typography fontSize={20} align="center">Corq!</Typography>}>
+                    <div className="card tooltip" style={{height: "208px" , width: "300px"}}>
+
+                        <img src={corq} height="100px" width="100px"  />
+                    </div>
+                </MaterialTooltip>
+            </a>
+
         </div>
 
       <div>
@@ -190,12 +221,19 @@ const IndexPage = () => {
             </a>
 
             <a href="https://instacart.com">
+                <MaterialTooltip title={<Typography fontSize={20} align="center">This is the message which needs to be displayed !</Typography>}>
                 <div className="card tooltip" style={{height: "208px" , width: "300px"}}>
+
                     <img src={instacart} height="100px" width="200px"  />
-                    <span className="tooltiptext">Tooltip Instacart</span>
+                    {/*<span className="tooltiptext">Tooltip Instacart</span>*/}
                 </div>
+                </MaterialTooltip>
             </a>
 
+
+            <MaterialTooltip title={<Typography fontSize={20}>This is the message which needs to be displayed !</Typography>}>
+                <Container>Material UI default</Container>
+            </MaterialTooltip>
 
         </div>
 
