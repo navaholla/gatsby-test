@@ -20,7 +20,7 @@ import sbuEngaged from '../images/sbuEngaged.png'
 import vis from '../images/vis.png'
 import corq from '../images/corq.png'
 import tbd from '../images/tbd.jpeg'
-
+import housing from '../images/housing.png'
 
 
 import ReactTooltip from "react-tooltip";
@@ -64,6 +64,7 @@ const IndexPage = () => {
     const corq_tip = "Event pass for all SBU engagements."
     const panera_tip = "American chain store of bakery-cafe, Never a no for COFFEE :)"
     const instacart_tip = "Grocery delivery"
+    const housing_portal_tip = "Stony Brook Housing Portal, for selecting apartment rooms and other important notifications."
 
   const Container = styled.div`
     background-color: lightblue;
@@ -187,9 +188,9 @@ const IndexPage = () => {
             </a>
 
             <a href="">
-                <MaterialTooltip title={<Typography fontSize={20} align="center">{tbd_tip}</Typography>}>
+                <MaterialTooltip title={<Typography fontSize={20} align="center">{housing_portal_tip}</Typography>}>
                     <div className="card tooltip" style={{height: "208px" , width: "300px"}}>
-                        <img src={tbd} height="100px" width="200px"  />
+                        <img src={housing} height="100px" width="300px"  />
                     </div>
                 </MaterialTooltip>
             </a>
@@ -315,7 +316,7 @@ const IndexPage = () => {
       <div className="headingEndStony">
           <img src={stonybrook} height="92px" width="250px" align="left" />
           <h1 className="heading">The End 🔥 </h1>
-          <h2 className="heading"><b>Have a good day</b></h2>
+          <h2 className="heading"><b>© Developed by Navaneeth Holla</b></h2>
       </div>
 
 
