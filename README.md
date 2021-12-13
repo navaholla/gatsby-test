@@ -1,3 +1,4 @@
-1. Git clone the project.
-2. npm run deploy.
+1. Git clone.
+2. npm install.
+3. npm run deploy.
 
